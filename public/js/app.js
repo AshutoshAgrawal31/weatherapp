@@ -1,10 +1,10 @@
-console.log('loaded')
+// console.log('loaded')
 
 
 fetch('http://puzzle.mead.io/puzzle').then((res)=>
 {
     res.json().then((data)=>{
-        console.log(data)
+        // console.log(data)
     })
 })
 
@@ -32,5 +32,5 @@ wform.addEventListener('submit',(e)=>
 
         })
     })
-    console.log(location)
+    // console.log(location)
 })
