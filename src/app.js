@@ -6,6 +6,7 @@ const forecast=require('./../../weather-app/utils/forecast')
 const request=require('request')
 
 const app=express()
+const port=process.env.PORT || 3000
 
 //path for views folder
 const viewspath=path.join(__dirname,'../templates/views')
@@ -93,6 +94,7 @@ app.get('*',(req,res)=>
 {
     res.send('404 error')
 })
-app.listen(3000,()=>{
-    console.log('server is up')
+
+app.listen(port,()=>{
+    console.log('server is up ')
 })
